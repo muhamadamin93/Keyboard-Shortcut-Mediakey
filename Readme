@@ -3,13 +3,16 @@ Shortcut XFCE for mediakey
 https://gist.github.com/jbonney/5743509
 Here is the steps (explained in a little more detail than the GitHub page):
 
-    Go to Settings Manager
-    Go to Keyboard
-    Go to the tab labeled Application Shortcuts
-    Click Add
-    Based on what keybind you need to add, use these commands
-        Play/Pause: 
-            ```dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause```
-        Stop: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
-        Next: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-        Previous: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+Go to Settings Manager
+Go to Keyboard
+Go to the tab labeled Application Shortcuts
+Click Add
+Based on what keybind you need to add, use these commands
+    Play/Pause: 
+        dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+    Stop:
+        dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
+    Next:
+        dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+    Previous:
+        dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
